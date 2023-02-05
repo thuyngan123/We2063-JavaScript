@@ -1,5 +1,5 @@
 {
-  "name": "we1730",
+  "name": "we2063",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,12 +9,6 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.0.0"
-  },
-  "dependencies": {
-    "boostrap": "^2.0.0",
-    "git": "^0.1.5",
-    "innit": "^0.0.0",
-    "navigo": "^8.11.1"
+    "vite": "^4.1.0"
   }
 }
