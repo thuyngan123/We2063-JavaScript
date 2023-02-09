@@ -59,7 +59,7 @@ const game = {
 
 //1. Tạo ra 1 mảng cầu thủ cho mỗi đội (variables 'players1' and 'players2')
 const [players1, players2] = game.players;
-console.log(players1, players1);
+console.log(players1, players2);
 
 //2. Phần tử đầu tiên trong mảng là Thủ môn, các phần tử còn lại sẽ là các cầu thủ ở
 // các vị trí khác. Ví dụ, Bayern Munich (team 1) bạn sẽ tạo 1 biến ('gk') với tên của

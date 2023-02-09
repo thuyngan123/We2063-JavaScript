@@ -4,8 +4,12 @@ const AdminProjectPage = () => {
     const [data, setData] = useState([]);
     useEffect(() => {
         //kiểm tra xem localStorage có dữ liệu không?
-        const projects = JSON.parse(localStorage.getItem("projects")) || [];
-        setData(projects);
+        //     const projects = JSON.parse(localStorage.getItem("projects")) || [];
+        //     setData(projects);
+        // }, []);
+        fetch("http://localhost:3000/post")
+            .then((response) => response.json())
+            .then((data) => setData());
     }, []);
     //chạy sau khi render
     useEffect(function () {
@@ -16,7 +20,10 @@ const AdminProjectPage = () => {
                 const newData = data.filter((project) = project.id != id)
                 localStorage.setItem("projects", JSON.stringify(newData));
                 setData(newData);
-            })
+                fetch("http://localhost:3000/post" + id, {
+                    method: "DELETE",
+                });
+            });
         }
     });
     return `<div class="container mt-5">   
