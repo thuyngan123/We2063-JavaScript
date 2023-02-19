@@ -16,6 +16,7 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import PageProjects from "./components/ProjectsDetail";
+import HomeAdmin from "./pages/admin/HomeAdmin";
 
 const app = document.querySelector("#app");
 router.on('/', () => render(HomePage, app));
@@ -27,6 +28,7 @@ router.on('/contact', () => render(Contact, app));
 router.on('/login', () => render(Login, app));
 router.on('/register', () => render(Register, app));
 router.on('/projectsdetail', () => render(PageProjects, app));
+router.on('./admin/homeadmin', () => render(HomeAdmin, app));
 
 
 

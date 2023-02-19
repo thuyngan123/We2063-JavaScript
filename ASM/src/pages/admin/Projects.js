@@ -22,7 +22,7 @@ const ProjectsAdminPage = () => {
                 }).then(() => {
                     const newProjects = projects.filter((project) => project.id !== +id);
                     setProjects(newProjects);
-                    // console(newProjects);
+                    console(newProjects);
                 });
 
             });
