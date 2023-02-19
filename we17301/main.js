@@ -10,9 +10,7 @@ import Postdetail from "./pages/post-detail";
 import ProjectPage from "./pages/project";
 import Projectdetail from "./pages/project-detail";
 // import './style.css';
-
 const app = document.querySelector("#app");
-
 router.on("/", () => render(homePage, app));
 router.on("/about", () => render(aboutPage, app));
 router.on("/contact", () => render(ContactPage, app));
